@@ -171,7 +171,7 @@ if SERVER then
     end )
 
     if !file.Exists( "lambdaplayers/mediadata.json", "DATA" ) then 
-        LAMBDAFS:WriteFile( "lambdaplayers/mediadata.json", LAMBDAFS:ReadFile( "materials/lambdaplayers/data/defaultmediadata.json", "json", "GAME" ), "json" )
+        LAMBDAFS:WriteFile( "lambdaplayers/mediadata.json", LAMBDAFS:ReadFile( "materials/lambdaplayers/data/defaultmediadata.vmt", "json", "GAME" ), "json" )
     end
 
     -- Load Media Data
