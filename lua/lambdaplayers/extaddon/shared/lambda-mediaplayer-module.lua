@@ -215,7 +215,7 @@ if CLIENT then
 
         LAMBDAPANELS:CreateButton( frame, BOTTOM, "Reset to Default", function()
             urllist:Clear()
-            local tbl = LAMBDAFS:ReadFile( "materials/lambdaplayers/data/defaultmediadata.json", "json", "GAME" )
+            local tbl = LAMBDAFS:ReadFile( "materials/lambdaplayers/data/defaultmediadata.vmt", "json", "GAME" )
             for url, info in pairs( tbl ) do 
                 urllist:AddLine( url, info.title, info.duration )
             end
